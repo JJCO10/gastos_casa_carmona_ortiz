@@ -5,6 +5,7 @@ import ExpenseCard from './components/ExpenseCard';
 import RecentTransactions from './components/RecentTransactions';
 import BudgetChart from './components/BudgetChart';
 import ExpensesPage from './pages/ExpensesPage';
+import BudgetPage from './pages/BudgetPage';
 
 function Dashboard() {
   return (
@@ -17,25 +18,25 @@ function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <ExpenseCard
           title="Balance Total"
-          amount={5240000}
+          amount={5240}
           trend={-2.5}
           icon={<Wallet className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
           title="Gastos Totales"
-          amount={1875000}
+          amount={1875}
           trend={12.3}
           icon={<ShoppingCart className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
           title="Ahorros Totales"
-          amount={3365000}
+          amount={3365}
           trend={-8.1}
           icon={<Banknote className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
           title="Facturas Totales"
-          amount={940000}
+          amount={940}
           trend={0.8}
           icon={<CreditCard className="w-6 h-6 text-indigo-600" />}
         />
@@ -58,6 +59,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/expenses" element={<ExpensesPage />} />
+            <Route path="/budget" element={<BudgetPage />} />
           </Routes>
         </div>
       </div>
