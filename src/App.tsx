@@ -10,32 +10,32 @@ function Dashboard() {
   return (
     <div className="p-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-800">Bienvenido a la economia del hogar</h1>
-        <p className="text-gray-600">En este espacion encotraras el seguimiento del capital de tu hogar.</p>
+        <h1 className="text-2xl font-bold text-gray-800">Panel Principal</h1>
+        <p className="text-gray-600">¡Bienvenido de vuelta! Aquí está el resumen de tus finanzas.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <ExpenseCard
-          title="Total Balance"
-          amount={5240}
+          title="Balance Total"
+          amount={5240000}
           trend={-2.5}
           icon={<Wallet className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
-          title="Total Expenses"
-          amount={1875}
+          title="Gastos Totales"
+          amount={1875000}
           trend={12.3}
           icon={<ShoppingCart className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
-          title="Total Savings"
-          amount={3365}
+          title="Ahorros Totales"
+          amount={3365000}
           trend={-8.1}
           icon={<Banknote className="w-6 h-6 text-indigo-600" />}
         />
         <ExpenseCard
-          title="Total Bills"
-          amount={940}
+          title="Facturas Totales"
+          amount={940000}
           trend={0.8}
           icon={<CreditCard className="w-6 h-6 text-indigo-600" />}
         />

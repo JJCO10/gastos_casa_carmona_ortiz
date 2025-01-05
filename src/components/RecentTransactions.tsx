@@ -3,34 +3,34 @@ import { ShoppingBag, Coffee, Home, Car } from 'lucide-react';
 const transactions = [
   {
     id: 1,
-    title: 'Grocery Shopping',
-    amount: -120.50,
-    date: '2024-03-15',
-    category: 'Shopping',
+    title: 'Compras Supermercado',
+    amount: -120000,
+    date: '2025-01-15',
+    category: 'Compras',
     icon: <ShoppingBag className="w-4 h-4" />,
   },
   {
     id: 2,
-    title: 'Coffee Shop',
-    amount: -4.99,
-    date: '2024-03-15',
-    category: 'Food',
+    title: 'Tienda',
+    amount: -15000,
+    date: '2025-01-15',
+    category: 'Alimentos',
     icon: <Coffee className="w-4 h-4" />,
   },
   {
     id: 3,
-    title: 'Rent Payment',
-    amount: -1200,
-    date: '2024-03-14',
-    category: 'Housing',
+    title: 'Pago de Renta',
+    amount: -850000,
+    date: '2025-01-14',
+    category: 'Vivienda',
     icon: <Home className="w-4 h-4" />,
   },
   {
     id: 4,
-    title: 'Gas Station',
-    amount: -45.30,
-    date: '2024-03-14',
-    category: 'Transport',
+    title: 'Transporte Público',
+    amount: -5000,
+    date: '2025-01-14',
+    category: 'Transporte',
     icon: <Car className="w-4 h-4" />,
   },
 ];
@@ -38,7 +38,7 @@ const transactions = [
 const RecentTransactions = () => {
   return (
     <div className="bg-white rounded-xl shadow-sm p-6">
-      <h2 className="text-lg font-semibold mb-4">Recent Transactions</h2>
+      <h2 className="text-lg font-semibold mb-4">Transacciones Recientes</h2>
       <div className="space-y-4">
         {transactions.map((transaction) => (
           <div key={transaction.id} className="flex items-center justify-between">

@@ -1,17 +1,17 @@
 
 const BudgetChart = () => {
   const categories = [
-    { name: 'Housing', percentage: 35, color: 'bg-blue-500' },
-    { name: 'Food', percentage: 20, color: 'bg-green-500' },
-    { name: 'Transport', percentage: 15, color: 'bg-yellow-500' },
-    { name: 'Utilities', percentage: 10, color: 'bg-purple-500' },
-    { name: 'Entertainment', percentage: 10, color: 'bg-red-500' },
-    { name: 'Others', percentage: 10, color: 'bg-gray-500' },
+    { name: 'Vivienda', percentage: 35, color: 'bg-blue-500' },
+    { name: 'Alimentos', percentage: 20, color: 'bg-green-500' },
+    { name: 'Transporte', percentage: 15, color: 'bg-yellow-500' },
+    { name: 'Servicios', percentage: 10, color: 'bg-purple-500' },
+    { name: 'Entretenimiento', percentage: 10, color: 'bg-red-500' },
+    { name: 'Otros', percentage: 10, color: 'bg-gray-500' },
   ];
 
   return (
     <div className="bg-white rounded-xl shadow-sm p-6">
-      <h2 className="text-lg font-semibold mb-4">Budget Distribution</h2>
+      <h2 className="text-lg font-semibold mb-4">Distribución del Presupuesto</h2>
       <div className="space-y-4">
         {categories.map((category) => (
           <div key={category.name}>

@@ -4,33 +4,32 @@ const ExpenseList = () => {
   const expenses = [
     {
       id: 1,
-      description: 'Grocery Shopping',
-      amount: 120.50,
-      category: 'Food',
-      date: '2024-03-15',
+      description: 'Compras Supermercado',
+      amount: 250000,
+      category: 'Alimentos',
+      date: '2025-01-15',
     },
     {
       id: 2,
-      description: 'Electric Bill',
-      amount: 85.30,
-      category: 'Utilities',
-      date: '2024-03-14',
+      description: 'Factura de Luz',
+      amount: 401000,
+      category: 'Servicios',
+      date: '2025-01-14',
     },
-    // Add more sample expenses here
   ];
 
   return (
     <div className="bg-white rounded-xl shadow-sm">
       <div className="p-6">
-        <h3 className="text-lg font-semibold mb-4">Expense History</h3>
+        <h3 className="text-lg font-semibold mb-4">Historial de Gastos</h3>
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="border-b border-gray-200">
-                <th className="text-left pb-3">Description</th>
-                <th className="text-left pb-3">Category</th>
-                <th className="text-left pb-3">Date</th>
-                <th className="text-right pb-3">Amount</th>
+                <th className="text-left pb-3">Descripción</th>
+                <th className="text-left pb-3">Categoría</th>
+                <th className="text-left pb-3">Fecha</th>
+                <th className="text-right pb-3">Monto</th>
                 <th className="w-10 pb-3"></th>
               </tr>
             </thead>

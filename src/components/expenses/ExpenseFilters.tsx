@@ -7,7 +7,7 @@ const ExpenseFilters = () => {
         <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
         <input
           type="text"
-          placeholder="Search expenses..."
+          placeholder="Buscar gastos..."
           className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
       </div>
@@ -15,23 +15,23 @@ const ExpenseFilters = () => {
       <div className="relative">
         <Tag className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
         <select className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          <option value="">All Categories</option>
-          <option value="food">Food</option>
-          <option value="transport">Transport</option>
-          <option value="utilities">Utilities</option>
-          <option value="entertainment">Entertainment</option>
-          <option value="other">Other</option>
+          <option value="">Todas las Categorías</option>
+          <option value="food">Alimentos</option>
+          <option value="transport">Transporte</option>
+          <option value="utilities">Servicios</option>
+          <option value="entertainment">Entretenimiento</option>
+          <option value="other">Otros</option>
         </select>
       </div>
       
       <div className="relative">
         <Calendar className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
         <select className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          <option value="this-month">This Month</option>
-          <option value="last-month">Last Month</option>
-          <option value="3-months">Last 3 Months</option>
-          <option value="6-months">Last 6 Months</option>
-          <option value="year">This Year</option>
+          <option value="this-month">Este Mes</option>
+          <option value="last-month">Mes Anterior</option>
+          <option value="3-months">Últimos 3 Meses</option>
+          <option value="6-months">Últimos 6 Meses</option>
+          <option value="year">Este Año</option>
         </select>
       </div>
     </div>

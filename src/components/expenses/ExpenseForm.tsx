@@ -1,10 +1,10 @@
 import { Calendar, DollarSign, Tag } from 'lucide-react';
 
 interface ExpenseFormProps {
-  onSubmit: (expense: any) => void;
+  onSubmit: (expense: unknown) => void;
 }
 
-const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSubmit }) => {
+const ExpenseForm: React.FC<ExpenseFormProps> = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
@@ -12,23 +12,23 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-sm p-6">
-      <h3 className="text-lg font-semibold mb-4">Add New Expense</h3>
+      <h3 className="text-lg font-semibold mb-4">Agregar Nuevo Gasto</h3>
       <div className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Description
+            Descripción
           </label>
           <input
             type="text"
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            placeholder="Enter expense description"
+            placeholder="Ingresa la descripción del gasto"
           />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Amount
+              Monto
             </label>
             <div className="relative">
               <DollarSign className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -42,24 +42,24 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSubmit }) => {
           
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Category
+              Categoría
             </label>
             <div className="relative">
               <Tag className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
               <select className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                <option value="">Select category</option>
-                <option value="food">Food</option>
-                <option value="transport">Transport</option>
-                <option value="utilities">Utilities</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="other">Other</option>
+                <option value="">Seleccionar categoría</option>
+                <option value="food">Alimentos</option>
+                <option value="transport">Transporte</option>
+                <option value="utilities">Servicios</option>
+                <option value="entertainment">Entretenimiento</option>
+                <option value="other">Otros</option>
               </select>
             </div>
           </div>
           
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Date
+              Fecha
             </label>
             <div className="relative">
               <Calendar className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -75,7 +75,7 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSubmit }) => {
           type="submit"
           className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors"
         >
-          Add Expense
+          Agregar Gasto
         </button>
       </div>
     </form>
