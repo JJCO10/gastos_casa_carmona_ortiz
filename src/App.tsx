@@ -7,6 +7,7 @@ import BudgetChart from './components/BudgetChart';
 import ExpensesPage from './pages/ExpensesPage';
 import BudgetPage from './pages/BudgetPage';
 import CalendarPage from './pages/CalendarPage';
+import SettingsPage from './pages/SettingsPage';
 
 function Dashboard() {
   return (
@@ -62,6 +63,7 @@ function App() {
             <Route path="/expenses" element={<ExpensesPage />} />
             <Route path="/budget" element={<BudgetPage />} />
             <Route path="/calendar" element={<CalendarPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
           </Routes>
         </div>
       </div>
