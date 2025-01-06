@@ -1,8 +1,12 @@
 import BudgetForm from '../components/budget/BudgetForm';
 import BudgetOverview from '../components/budget/BudgetOverview';
-import BudgetCategoryList from '../components/budget/BudgetCategoryList';
+import BudgetMonthSelector from '../components/budget/BudgetMonthSelector';
+import BudgetMonthlyView from '../components/budget/BudgetMonthlyView';
+import { useState } from 'react';
 
 const BudgetPage = () => {
+  const [currentDate, setCurrentDate] = useState(new Date());
+
   return (
     <div className="p-8">
       <div className="mb-8">
@@ -10,9 +14,14 @@ const BudgetPage = () => {
         <p className="text-gray-600">Establece y controla tu presupuesto mensual</p>
       </div>
 
+      <BudgetMonthSelector
+        currentDate={currentDate}
+        onMonthChange={setCurrentDate}
+      />
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2">
-          <BudgetCategoryList />
+          <BudgetMonthlyView month={currentDate} />
         </div>
         <div>
           <BudgetForm />
